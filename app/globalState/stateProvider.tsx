@@ -11,8 +11,10 @@ import {
 interface Context {
   baseUnit: string;
   setBaseUnit: Dispatch<SetStateAction<string>>;
-  amount: number;
-  setAmount: Dispatch<SetStateAction<number>>;
+  baseUnitAmount: number;
+  setBaseUnitAmount: Dispatch<SetStateAction<number>>;
+  resultingUnit: string;
+  setResultingUnit: Dispatch<SetStateAction<string>>;
 }
 
 const myContext = createContext<Context | undefined>(undefined);
@@ -33,13 +35,16 @@ interface GlobalState {
 
 export const StateProvider: React.FC<GlobalState> = ({ children }) => {
   const [baseUnit, setBaseUnit] = useState("");
-  const [amount, setAmount] = useState(0);
+  const [baseUnitAmount, setBaseUnitAmount] = useState(0);
+  const [resultingUnit, setResultingUnit] = useState("");
 
   const stateObj = {
     baseUnit,
     setBaseUnit,
-    amount,
-    setAmount
+    baseUnitAmount,
+    setBaseUnitAmount,
+    resultingUnit,
+    setResultingUnit
   };
 
   return (
