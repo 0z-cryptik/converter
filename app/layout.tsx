@@ -65,7 +65,9 @@ export default function RootLayout({
         />
         <meta
           property="og:title"
-          content={metadata.openGraph?.title}
+          content={
+            "Unit Converter - Temperature, Weight, Length, Distance etc Conversions"
+          }
         />
         <meta
           property="og:description"
