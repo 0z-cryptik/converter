@@ -9,8 +9,6 @@ import {
 } from "react";
 
 interface Context {
-  baseUnitSelected: boolean;
-  setBaseUnitSelected: Dispatch<SetStateAction<boolean>>;
   baseUnit: string;
   setBaseUnit: Dispatch<SetStateAction<string>>;
 }
@@ -32,12 +30,9 @@ interface GlobalState {
 }
 
 export const StateProvider: React.FC<GlobalState> = ({ children }) => {
-  const [baseUnitSelected, setBaseUnitSelected] = useState(false);
   const [baseUnit, setBaseUnit] = useState("");
 
   const stateObj = {
-    baseUnitSelected,
-    setBaseUnitSelected,
     baseUnit,
     setBaseUnit
   };

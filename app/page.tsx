@@ -1,3 +1,5 @@
+"use client";
+
 import { App } from "./ui/app";
 import { StateProvider } from "./globalState/stateProvider";
 
