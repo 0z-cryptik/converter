@@ -25,6 +25,7 @@ export const ConvertTo = () => {
       <select
         id="convertFrom"
         defaultValue=""
+        className="outline-none bg-blue-500 ml-2"
         onChange={(e) => {
           setResultingUnit(e.target.value);
         }}>

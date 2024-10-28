@@ -1,6 +1,6 @@
 export const Header = () => {
   return (
-    <h1 className="text-2xl">
+    <h1 className="text-2xl absolute top-[40px]">
       Every unit converter, built by{" "}
       <a
         href="https://github.com/0z-cryptik"

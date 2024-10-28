@@ -11,7 +11,7 @@ export const Form = () => {
         id="baseUnitAmount"
         placeholder={`how many ${baseUnit}?`}
         type="number"
-        className="w-full outline-none py-2 pl-2"
+        className="w-full outline-none py-2 pl-2 bg-transparent"
         value={val}
         onChange={(e) => {
           setVal(e.target.value);

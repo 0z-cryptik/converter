@@ -22,13 +22,15 @@ export const App = () => {
   }
 
   return (
-    <section className="flex flex-col items-center justify-center">
+    <section className="flex flex-col items-center justify-center h-screen bg-black text-white">
       <Header />
-      <ConvertFrom />
-      {baseUnit && baseUnitAmount !== 0 && <ConvertTo />}
-      {finalResult !== "" && (
-        <p className="text-lg">Answer = {finalResult}</p>
-      )}
+      <div className="border p-[20px] mt-7">
+        <ConvertFrom />
+        {baseUnit && baseUnitAmount !== 0 && <ConvertTo />}
+        {finalResult !== "" && (
+          <p className="text-lg mt-5">Answer = {finalResult}</p>
+        )}
+      </div>
     </section>
   );
 };

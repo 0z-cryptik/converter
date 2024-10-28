@@ -19,12 +19,13 @@ export const Dropdown = () => {
   };
 
   return (
-    <div className="mt-7">
+    <div>
       <label htmlFor="convertFrom">Convert from:</label>
       <select
         id="convertFrom"
         defaultValue=""
-        onChange={handleSelect}>
+        onChange={handleSelect}
+        className="outline-none bg-blue-500 ml-2">
         <option
           value=""
           disabled
