@@ -1,4 +1,4 @@
-import { ConvertFrom } from "./convertFrom";
+import { ConvertFrom } from "./convertFrom/convertFrom";
 import { Header } from "./header";
 
 export const App = () => {

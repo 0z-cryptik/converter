@@ -1,18 +1,20 @@
-import { units } from "../libs/units";
-import { useList } from "../globalState/stateProvider";
+import { units } from "../../libs/units";
+import { useList } from "../../globalState/stateProvider";
 
-export const ConvertFrom = () => {
-  const { setBaseUnit, baseUnit } =
-    useList();
+export const Dropdown = () => {
+  const { setBaseUnit } = useList();
+
   const handleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setBaseUnit(e.target.value);
   };
+
   return (
     <div className="mt-7">
       <label htmlFor="convertFrom">Convert from:</label>
       <select
         id="convertFrom"
-        defaultValue="" onChange={handleSelect}>
+        defaultValue=""
+        onChange={handleSelect}>
         <option
           value=""
           disabled
