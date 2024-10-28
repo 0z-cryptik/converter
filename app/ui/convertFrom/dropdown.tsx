@@ -2,10 +2,20 @@ import { units } from "../../libs/units";
 import { useList } from "../../globalState/stateProvider";
 
 export const Dropdown = () => {
-  const { setBaseUnit } = useList();
+  const {
+    setBaseUnit,
+    setBaseUnitAmount,
+    setFinalresult,
+    setResultingUnit,
+    setVal
+  } = useList();
 
   const handleSelect = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setBaseUnit(e.target.value);
+    setVal("");
+    setBaseUnitAmount(0);
+    setFinalresult("");
+    setResultingUnit("");
   };
 
   return (

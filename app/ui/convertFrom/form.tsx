@@ -3,8 +3,7 @@ import { IoMdCheckbox } from "react-icons/io";
 import { useState } from "react";
 
 export const Form = () => {
-  const { baseUnit, setBaseUnitAmount } = useList();
-  const [val, setVal] = useState("");
+  const { baseUnit, setBaseUnitAmount, val, setVal } = useList();
 
   return (
     <form className="mt-5 border flex flex-row">

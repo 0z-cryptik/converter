@@ -15,6 +15,10 @@ interface Context {
   setBaseUnitAmount: Dispatch<SetStateAction<number>>;
   resultingUnit: string;
   setResultingUnit: Dispatch<SetStateAction<string>>;
+  finalResult: string;
+  setFinalresult: Dispatch<SetStateAction<string>>;
+  val: string;
+  setVal: Dispatch<SetStateAction<string>>;
 }
 
 const myContext = createContext<Context | undefined>(undefined);
@@ -37,6 +41,8 @@ export const StateProvider: React.FC<GlobalState> = ({ children }) => {
   const [baseUnit, setBaseUnit] = useState("");
   const [baseUnitAmount, setBaseUnitAmount] = useState(0);
   const [resultingUnit, setResultingUnit] = useState("");
+  const [finalResult, setFinalresult] = useState("");
+  const [val, setVal] = useState("");
 
   const stateObj = {
     baseUnit,
@@ -44,7 +50,11 @@ export const StateProvider: React.FC<GlobalState> = ({ children }) => {
     baseUnitAmount,
     setBaseUnitAmount,
     resultingUnit,
-    setResultingUnit
+    setResultingUnit,
+    finalResult,
+    setFinalresult,
+    val,
+    setVal
   };
 
   return (
