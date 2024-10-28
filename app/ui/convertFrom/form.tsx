@@ -1,6 +1,5 @@
 import { useList } from "@/app/globalState/stateProvider";
 import { IoMdCheckbox } from "react-icons/io";
-import { useState } from "react";
 
 export const Form = () => {
   const { baseUnit, setBaseUnitAmount, val, setVal } = useList();

@@ -1,5 +1,6 @@
 import { units } from "../../libs/units";
 import { useList } from "../../globalState/stateProvider";
+import { ubuntuMono } from "../fonts";
 
 export const Dropdown = () => {
   const {
@@ -36,7 +37,7 @@ export const Dropdown = () => {
           return (
             <option
               key={i}
-              value={unit}>
+              value={unit} className={`${ubuntuMono.className}`}>
               {unit}
             </option>
           );
