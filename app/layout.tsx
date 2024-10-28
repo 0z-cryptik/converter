@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       "Unit Converter - Temperature, Weight, Length, Distance etc Conversions",
     description:
       "Quickly convert units like Celsius to Fahrenheit, meters to miles, kilograms to pounds, and more.",
-    url: "https://yourwebsite.com",
+    url: "https://converter-black.vercel.app",
     siteName: "Unit Converter",
     images: [
       {
@@ -57,7 +57,7 @@ export default function RootLayout({
         />
         <link
           rel="canonical"
-          href="https://yourwebsite.com"
+          href="https://converter-black.vercel.app"
         />
         <meta
           property="og:type"
