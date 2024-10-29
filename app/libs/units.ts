@@ -1,5 +1,5 @@
 export const temperatureUnits: string[] = [
-  "º celcius",
+  "º celsius",
   "º fahrenheit",
   "º kelvin"
 ];

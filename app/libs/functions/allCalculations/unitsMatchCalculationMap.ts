@@ -4,16 +4,16 @@ import * as temperatureFunctions from "@/app/libs/functions/temperatureFunctions
 import { UnitsMatchAndConvertMapType } from "./types";
 
 export const unitsMatchAndConvertMap: UnitsMatchAndConvertMapType = {
-  "º celcius": {
+  "º celsius": {
     "º fahrenheit": temperatureFunctions.celsiusToFahrenheit,
     "º kelvin": temperatureFunctions.celsiusToKelvin
   },
   "º fahrenheit": {
-    "º celcius": temperatureFunctions.fahrenheitToCelsius,
+    "º celsius": temperatureFunctions.fahrenheitToCelsius,
     "º kelvin": temperatureFunctions.fahrenheitToKelvin
   },
   "º kelvin": {
-    "º celcius": temperatureFunctions.kelvinToCelsius,
+    "º celsius": temperatureFunctions.kelvinToCelsius,
     "º fahrenheit": temperatureFunctions.kelvinToFahrenheit
   },
   "gram(s)": {
