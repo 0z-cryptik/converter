@@ -7,21 +7,25 @@ import * as gramFunctions from "@/app/libs/functions/weight/grams";
 import * as poundFunctions from "@/app/libs/functions/weight/pounds";
 import * as ouncesFunctions from "@/app/libs/functions/weight/ounces";
 
-import * as temperatureFunctions from "@/app/libs/functions/temperatureFunctions";
+// temperature related imports
+import * as celsiusFunctions from "@/app/libs/functions/temperature/celsius";
+import * as fahrenheitFunctions from "@/app/libs/functions/temperature/fahrenheit";
+import * as kelvinFunctions from "@/app/libs/functions/temperature/kelvin";
+
 import { UnitsMatchAndConvertMapType } from "./types";
 
 export const unitsMatchAndConvertMap: UnitsMatchAndConvertMapType = {
   "º celsius": {
-    "º fahrenheit": temperatureFunctions.celsiusToFahrenheit,
-    "º kelvin": temperatureFunctions.celsiusToKelvin
+    "º fahrenheit": celsiusFunctions.celsiusToFahrenheit,
+    "º kelvin": celsiusFunctions.celsiusToKelvin
   },
   "º fahrenheit": {
-    "º celsius": temperatureFunctions.fahrenheitToCelsius,
-    "º kelvin": temperatureFunctions.fahrenheitToKelvin
+    "º celsius": fahrenheitFunctions.fahrenheitToCelsius,
+    "º kelvin": fahrenheitFunctions.fahrenheitToKelvin
   },
   "º kelvin": {
-    "º celsius": temperatureFunctions.kelvinToCelsius,
-    "º fahrenheit": temperatureFunctions.kelvinToFahrenheit
+    "º celsius": kelvinFunctions.kelvinToCelsius,
+    "º fahrenheit": kelvinFunctions.kelvinToFahrenheit
   },
   "gram(s)": {
     "kilogram(s)": gramFunctions.gramsToKilograms,
