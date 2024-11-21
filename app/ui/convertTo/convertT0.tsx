@@ -1,5 +1,5 @@
 import {
-  lengthUnits,
+  distanceUnits,
   temperatureUnits,
   weightUnits
 } from "../../libs/units";
@@ -11,8 +11,8 @@ export const ConvertTo = () => {
 
   let matchingUnit: string[];
 
-  if (lengthUnits.includes(baseUnit)) {
-    matchingUnit = lengthUnits.filter((item) => item !== baseUnit);
+  if (distanceUnits.includes(baseUnit)) {
+    matchingUnit = distanceUnits.filter((item) => item !== baseUnit);
   } else if (temperatureUnits.includes(baseUnit)) {
     matchingUnit = temperatureUnits.filter((item) => item !== baseUnit);
   } else {

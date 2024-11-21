@@ -12,18 +12,18 @@ export const weightUnits: string[] = [
   "ounce(s)"
 ];
 
-export const lengthUnits: string[] = [
+export const distanceUnits: string[] = [
   "mile(s)",
   "kilometer(s)",
   "yard(s)",
   "meter(s)",
   "feet(s)",
   "square mile(s)",
-  "square kilometre(s)"
+  "square kilometer(s)"
 ];
 
 export const units: string[] = [
   ...temperatureUnits,
   ...weightUnits,
-  ...lengthUnits
+  ...distanceUnits
 ];
