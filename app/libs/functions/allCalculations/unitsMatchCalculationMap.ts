@@ -1,5 +1,12 @@
 import * as lengthFunctions from "@/app/libs/functions/lengthFunctions";
-import * as weightFunctions from "@/app/libs/functions/weightFunctions";
+
+// weight related imports
+import * as tonsFunctions from "@/app/libs/functions/weight/tons";
+import * as kilogramFunctions from "@/app/libs/functions/weight/kilograms";
+import * as gramFunctions from "@/app/libs/functions/weight/grams";
+import * as poundFunctions from "@/app/libs/functions/weight/pounds";
+import * as ouncesFunctions from "@/app/libs/functions/weight/ounces";
+
 import * as temperatureFunctions from "@/app/libs/functions/temperatureFunctions";
 import { UnitsMatchAndConvertMapType } from "./types";
 
@@ -17,24 +24,34 @@ export const unitsMatchAndConvertMap: UnitsMatchAndConvertMapType = {
     "º fahrenheit": temperatureFunctions.kelvinToFahrenheit
   },
   "gram(s)": {
-    "kilogram(s)": weightFunctions.gramsToKilograms,
-    "ton(s)": weightFunctions.gramsToTons,
-    "pound(s)": weightFunctions.gramsToPounds
+    "kilogram(s)": gramFunctions.gramsToKilograms,
+    "ton(s)": gramFunctions.gramsToTons,
+    "pound(s)": gramFunctions.gramsToPounds,
+    "ounce(s)": gramFunctions.gramsToOunces
   },
   "kilogram(s)": {
-    "gram(s)": weightFunctions.kilogramsToGrams,
-    "ton(s)": weightFunctions.kilogramsToTons,
-    "pound(s)": weightFunctions.kilogramsToPounds
+    "gram(s)": kilogramFunctions.kilogramsToGrams,
+    "ton(s)": kilogramFunctions.kilogramsToTons,
+    "pound(s)": kilogramFunctions.kilogramsToPounds,
+    "ounce(s)": kilogramFunctions.kilogramsToOunces
   },
   "ton(s)": {
-    "gram(s)": weightFunctions.tonsToGrams,
-    "kilogram(s)": weightFunctions.tonsToKilograms,
-    "pound(s)": weightFunctions.tonsToPounds
+    "gram(s)": tonsFunctions.tonsToGrams,
+    "kilogram(s)": tonsFunctions.tonsToKilograms,
+    "pound(s)": tonsFunctions.tonsToPounds,
+    "ounce(s)": tonsFunctions.tonsToOunces
   },
   "pound(s)": {
-    "gram(s)": weightFunctions.poundsToGrams,
-    "kilogram(s)": weightFunctions.poundsToKilograms,
-    "ton(s)": weightFunctions.poundsToTons
+    "gram(s)": poundFunctions.poundsToGrams,
+    "kilogram(s)": poundFunctions.poundsToKilograms,
+    "ton(s)": poundFunctions.poundsToTons,
+    "ounce(s)": poundFunctions.poundsToOunces
+  },
+  "ounce(s)": {
+    "gram(s)": ouncesFunctions.ouncesToGrams,
+    "kilogram(s)": ouncesFunctions.ouncesToKilograms,
+    "ton(s)": ouncesFunctions.ouncesToTons,
+    "pound(s)": ouncesFunctions.ouncesToPounds
   },
   "mile(s)": {
     "kilometer(s)": lengthFunctions.milesToKilometers,
