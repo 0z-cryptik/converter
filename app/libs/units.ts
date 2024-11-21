@@ -17,7 +17,8 @@ export const lengthUnits: string[] = [
   "yard(s)",
   "meter(s)",
   "feet(s)",
-  "square mile(s)"
+  "square mile(s)",
+  "square kilometre(s)"
 ];
 
 export const units: string[] = [

@@ -38,6 +38,13 @@ export const kilometersToFeet = (kilometers: number): string => {
   return `${value} feet`;
 };
 
+export const kilometersToSquareKilometers = (
+  kilometers: number
+): string => {
+  const value = kilometers ** 2;
+  return `${value} square kilometers`;
+};
+
 export const yardsToMiles = (yards: number): string => {
   const value = yards / 1760; // 1 yard = 0.000568182 miles
   return `${value} miles`;
@@ -110,4 +117,15 @@ export const squareKilometersToSquareMiles = (
 ): string => {
   const value = squareKilometers / 2.58999; // 1 square kilometer = 0.386102 square miles
   return `${value} square miles`;
+};
+
+export const squareKilometersToKilometers = (
+  squareKilometers: number
+): string => {
+  if (squareKilometers < 0) {
+    return "Invalid input";
+  }
+
+  const value = Math.sqrt(squareKilometers); // Square root of the area
+  return `${value} kilometers`;
 };
