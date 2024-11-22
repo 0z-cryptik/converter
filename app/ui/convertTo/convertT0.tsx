@@ -1,9 +1,7 @@
-import {
-  distanceUnits,
-  temperatureUnits,
-  weightUnits
-} from "../../libs/units";
-
+import { distanceUnits } from "@/app/libs/arrays/distance";
+import { weightUnits } from "@/app/libs/arrays/weight";
+import { temperatureUnits } from "@/app/libs/arrays/temperature";
+import { liquidUnits } from "@/app/libs/arrays/liquid";
 import { useList } from "../../globalState/stateProvider";
 
 export const ConvertTo = () => {
@@ -15,6 +13,8 @@ export const ConvertTo = () => {
     matchingUnit = distanceUnits.filter((item) => item !== baseUnit);
   } else if (temperatureUnits.includes(baseUnit)) {
     matchingUnit = temperatureUnits.filter((item) => item !== baseUnit);
+  } else if (liquidUnits.includes(baseUnit)) {
+    matchingUnit = liquidUnits.filter((item) => item !== baseUnit);
   } else {
     matchingUnit = weightUnits.filter((item) => item !== baseUnit);
   }

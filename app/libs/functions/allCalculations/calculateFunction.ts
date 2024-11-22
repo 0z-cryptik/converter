@@ -1,4 +1,4 @@
-import { UnitsMatchMap } from "../maps/allUnits";
+import { UnitsMatchMap } from "../../maps/allUnits";
 
 export const calculate = (
   baseUnit: string,
