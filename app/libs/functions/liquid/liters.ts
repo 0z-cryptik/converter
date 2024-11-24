@@ -10,10 +10,10 @@ export const litersToCentiliters = (liters: number): string => {
 
 export const litersToPints = (liters: number): string => {
   const value = liters * 2.11338; // 1 liter = 2.11338 pints 
-  return `${value} pints`;
+  return `${value} pints (US)`;
 };
 
 export const litersToGallons = (liters: number): string => {
   const value = liters * 0.264172; // 1 liter = 0.264172 gallons 
-  return `${value} gallons`;
+  return `${value} gallons (US)`;
 };

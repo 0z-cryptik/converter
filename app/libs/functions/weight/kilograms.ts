@@ -5,7 +5,7 @@ export const kilogramsToGrams = (kilograms: number): string => {
 
 export const kilogramsToTons = (kilograms: number): string => {
   const value = kilograms / 1000; // 1 ton = 1000 kg
-  return `${value} tons`;
+  return `${value} tons (US)`;
 };
 
 export const kilogramsToPounds = (kilograms: number): string => {

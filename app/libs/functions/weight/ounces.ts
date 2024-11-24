@@ -5,7 +5,7 @@ export const ouncesToPounds = (ounces: number): string => {
 
 export const ouncesToTons = (ounces: number): string => {
   const value = ounces / 32000; // 1 ounce = 1/32,000 ton (US)
-  return `${value} tons`;
+  return `${value} tons (US)`;
 };
 
 export const ouncesToGrams = (ounces: number): string => {

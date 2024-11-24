@@ -15,5 +15,5 @@ export const gallonsToCentiliters = (gallons: number): string => {
 
 export const gallonsToPints = (gallons: number): string => {
   const value = gallons * 8; // 1 gallon (US) = 8 pints
-  return `${value} pints`;
+  return `${value} pints (US)`;
 };

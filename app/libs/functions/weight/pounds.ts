@@ -10,7 +10,7 @@ export const poundsToKilograms = (pounds: number): string => {
 
 export const poundsToTons = (pounds: number): string => {
   const value = pounds / 2204.62; // 1 lb = 0.000453592 tons
-  return `${value} tons`;
+  return `${value} tons (US)`;
 };
 
 export const poundsToOunces = (pounds: number): string => {
